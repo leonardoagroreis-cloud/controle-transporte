@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>Controle Transporte - Ida</title>
+</head>
+
+<body style="font-family:Arial;text-align:center;padding:40px;">
+
+<h2>Micro01 - Ida</h2>
+
+<p>Digite seu ID:</p>
+
+<input
+id="id"
+type="text"
+style="font-size:24px;padding:10px;text-align:center;"
+
+>
+
+<br><br>
+
+<button
+onclick="registrar()"
+style="font-size:20px;padding:10px 20px;"
+
+>
+
+Confirmar Embarque </button>
+
+<script>
+
+function registrar(){
+
+var id =
+document.getElementById("id").value;
+
+window.location.href =
+"https://script.google.com/macros/s/AKfycbwTEPw03E5WiHyU7wcryssXxk2AkzHSyrL7MWa6eS4n3uUSCviCC2drRSznFESFvNfK/exec?micro=Micro01&sentido=Ida&id="
++ encodeURIComponent(id);
+
+}
+
+</script>
+
+</body>
+
+</html>
